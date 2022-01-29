@@ -1,0 +1,237 @@
+html {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-size: 0.8em;
+}
+
+.user-welcome {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.user-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 17px;
+}
+
+.select-user {
+    background-color: #2196f3;
+    color: white;
+    font-weight: light;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+p {
+    font-weight: bold;
+}
+
+.personal-chat {
+    width: 100%;
+    background-color: ghostwhite;
+}
+
+.chats-header {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: #2196f3;
+    top: 0;
+}
+
+.back-button {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px;
+}
+
+.all-messages {
+    min-height: calc(100vh - 60px);
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.sender, .receiver {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    border: 0px solid #e5e5e5;
+    border-radius: 40px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    margin: 5px;
+    padding: 20px 40px;
+    min-width: 40%;
+    max-width: 60%;
+    background-image: linear-gradient(to right, #e4f3f3 0%, #b5d2ff 51%, #daf9ff 100%);
+    background-size: 200% auto;
+    transition: 5.5s;
+
+}
+
+.sender:hover {
+    background-position: right center; /* change the direction of the change here */
+}
+
+
+.sender {
+    align-items: flex-end;
+    margin-left: auto;
+
+}
+
+.receiver {
+    border: 1px solid #f3f3f3;
+    align-items: flex-start;
+    margin-right: auto;
+    background-image:none;
+    background-color: #eee;
+}
+
+.users {
+    cursor: pointer;
+    margin: 0px;
+    padding: 12px 10px;
+    border-bottom: 1px solid rgba(248, 245, 245, 0.5);
+    transition: 0.5s;
+}
+
+.users:hover {
+    background-color: rgb(240, 240, 223);
+    color: black;
+}
+
+.select-message {
+    text-align: center;
+    font-weight: bold;
+}
+
+.chat-box {
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.MuiOutlinedInput-root-41 {
+    border: 1px solid gray;
+}
+
+.MuiFormControl-fullWidth-40 {
+    background-color: white;
+}
+
+.sender-name {
+    font-family: "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    font-weight: 100;
+    padding-bottom: 0px;
+    font-size: 0.8em;
+}
+
+.paper {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-area {
+    border: 10px;
+}
+
+.leave {
+    cursor: pointer;
+}
+
+.time {
+    font-style: italic;
+    font-size: 0.8em;
+    color: rgb(0, 151, 237);
+    padding-top: 3px;
+}
+
+.users .time {
+    display: table-cell;
+    margin-left: auto;
+    font-size: 0.8em;
+    color: rgb(153, 200, 250);
+}
+
+.small {
+    font-size: 0.8em;
+    color: rgb(153, 200, 250);
+    padding-top: 3px;
+}
+
+
+.user-typing  {
+    width: 50%;
+    padding: 10px;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+    .chatPage {
+        display: flex;
+        flex-flow: row nowrap
+    }
+    .user-welcome {
+        display: block !important;
+        position: fixed;
+        width: 30%;
+        border-right: 1px solid skyblue;
+        overflow-y: auto;
+    }
+    .personal-chat {
+        display: block !important;
+        width: 70%;
+        float: right;
+    }
+    .back-button {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .user-welcome {
+        width: 25%
+    }
+    .personal-chat {
+        width: 75%
+    }
+}
