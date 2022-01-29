@@ -1,4 +1,7 @@
 {
+  "name": "react messenger",
+  "version": "1.0",
+  "homepage": "https://skiv1986.github.io/react-messenger/",
   "dependencies": {
     "@apollo/client": "^3.4.16",
     "@apollo/link-ws": "^2.0.0-beta.3",
@@ -21,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -34,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
