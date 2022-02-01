@@ -79,19 +79,19 @@ p {
     font-family: "Montserrat", sans-serif;
     font-weight: 100;
     border: 0px solid #e5e5e5;
-    border-radius: 40px;
+    border-radius: 20px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
     line-height: 1.6;
     margin: 5px;
-    padding: 20px 40px;
+    padding: 5px 30px;
     min-width: 40%;
     max-width: 60%;
     background-image: linear-gradient(to right, #e4f3f3 0%, #b5d2ff 51%, #daf9ff 100%);
     background-size: 200% auto;
     transition: 5.5s;
-
+    flex: 0 0 auto;
 }
 
 .sender:hover {
