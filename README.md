@@ -3,7 +3,7 @@ This is the client of a chat application built with Dgraph server and GraphQL as
 It was bootstrapped using create-react-app. 
 It uses Apollo Client to connect the GraphQL server to React.
 
-To try it go to https://skiv1986.github.io/react-messenger/, you could login, register and chat with another user  which you want.
+To try it go to https://abalshakou.github.io/react-messenger/, you could login, register and chat with another user  which you want.
 
 Functionality:  
 - register user used email and name saved it in localstorage as token
